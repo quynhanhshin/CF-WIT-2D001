@@ -1,13 +1,10 @@
-import Info from "./components/Info";
-
+import Product from "./components/product/Product"
+import Counter from "./components/counter/Counter";
 function App() {
-  return ( //từ 2 trở lên thì có ngoặc tròn và bao những thành phần bên trong bởi div
-    <div>
-      <Info a="a" b="b" name="Nguyen Van A" age="26" phone="123456" />
-      <Info a="a" b="b" name="Nguyen Van B" age="28" phone="123488" />
-    </div>
-
-  );
+  return (<Counter>
+    <h1>Sản phẩm mới</h1>
+    <Product />
+  </Counter>);
 }
 
 export default App;
